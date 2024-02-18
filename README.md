@@ -3,9 +3,9 @@
 
 - 🔭 we're working on [sorting algorithms](https://github.com/Thobeats/sorting_algorithms)
 
-- 🌱 I’m currently learning **Sorting**
+- 🌱 We're currently learning **Sorting Algorithms and Big O**
 
-- 📫 How to reach me **tobiy23@gmail.com**
+- 📫 How to reach us **tobiy23@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -13,3 +13,4 @@
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> </p>
+
