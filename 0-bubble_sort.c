@@ -13,9 +13,6 @@ void bubble_sort(int *array, size_t size)
 	unsigned int i, j;
 	int isSwapped;
 
-	if (size < 2)
-		print_array(array, size);
-
 	for (i = 0; i < size - 1; i++)
 	{
 		isSwapped = 0;
