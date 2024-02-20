@@ -7,7 +7,7 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *tempNode, *key;
+	listint_t *tempNode, *key, *holder;
 
 	if (list == NULL)
 		return;
@@ -17,6 +17,7 @@ void insertion_sort_list(listint_t **list)
 	while (key != NULL)
 	{
 		tempNode = key->prev;
+		holder = tempNode;
 
 		while (tempNode->next != NULL && tempNode->n > key->n)
 		{
@@ -39,6 +40,11 @@ void insertion_sort_list(listint_t **list)
 			}
 			print_list(*list);
 		}
-		key = key->next;
+		if (key->n < holder->n)
+			key = holder->next;
+		else if (holder->next)
+			key = holder->next->next;
+		else
+			key = holder->next;
 	}
 }
