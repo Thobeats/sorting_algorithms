@@ -13,7 +13,8 @@ void insertion_sort_list(listint_t **list)
 		return;
 	if (*list == NULL)
 		return;
-	key = (*list)->next;
+	if ((*list)->next)
+		key = (*list)->next;
 	while (key != NULL)
 	{
 		tempNode = key->prev;
