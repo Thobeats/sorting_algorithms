@@ -11,7 +11,6 @@
 void selection_sort(int *array, size_t size)
 {
 	unsigned int i, j, minId;
-	int isSwapped;
 
 	if (array == NULL)
 		return;
@@ -20,7 +19,6 @@ void selection_sort(int *array, size_t size)
 
 	for (i = 0; i < size - 1; i++)
 	{
-		isSwapped = 0;
 		minId = i;
 		for (j = i + 1; j < size; j++)
 		{
@@ -33,13 +31,7 @@ void selection_sort(int *array, size_t size)
 		if (minId != i)
 		{
 			swapValues(&array[minId], &array[i]);
-			isSwapped = 1;
 			print_array(array, size);
-		}
-
-		if (isSwapped == 0)
-		{
-			break;
 		}
 	}
 }
