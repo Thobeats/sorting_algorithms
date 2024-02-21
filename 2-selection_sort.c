@@ -10,27 +10,23 @@
 
 void selection_sort(int *array, size_t size)
 {
-	unsigned int i, j, minId;
+	unsigned int i, j, temp, holder = 0;
 
-	if (array == NULL)
-		return;
-	if (size <= 0)
-		return;
-
-	for (i = 0; i < size - 1; i++)
+	for (i = 0; i < size; i++)
 	{
-		minId = i;
+		temp = i;
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[j] < array[minId])
+			if (array[temp] > array[j])
 			{
-				minId = j;
+				temp = j;
 			}
 		}
-
-		if (minId != i)
+		if (temp != i)
 		{
-			swapValues(&array[minId], &array[i]);
+			holder = array[i];
+			array[i] = array[temp];
+			array[temp] = holder;
 			print_array(array, size);
 		}
 	}
