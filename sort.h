@@ -24,4 +24,5 @@ void swapValues(int *x, int *y);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+void quick_sorting(int *array, size_t size, int *full_array, size_t full_size);
 #endif
